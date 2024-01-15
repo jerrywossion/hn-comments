@@ -1,0 +1,1 @@
+(()=>{"use strict";let e=document.URL;chrome.storage.local.get(e).then((t=>{let o=t[e].id;o&&document.body.insertAdjacentHTML("beforeend",`<a target="_blank" href="https://news.ycombinator.com/item?id=${o}" style="padding: 10px; border-radius: 5px; background-color: orange; color: white; position: fixed; right: 20px; bottom: 20px;">HN Comments</a>`)}))})();

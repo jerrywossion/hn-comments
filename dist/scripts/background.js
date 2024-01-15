@@ -1,0 +1,1 @@
+(()=>{"use strict";chrome.runtime.onMessage.addListener((function(r,e,t){r.key,"openUrl"===r.method&&(r.url?(chrome.tabs.create({active:!1,url:r.url}),chrome.history.addUrl({url}),t(`Ok: ${r.url}`)):t("Bad url"),e.tab&&(e.tab.active=!0))}))})();
